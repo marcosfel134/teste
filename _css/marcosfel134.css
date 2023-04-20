@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+/* Importando fontes */
+@font-face {
+    font-family: 'open';
+    src: url('../_fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'openbold';
+    src: url('../_fonts/OpenSans-EBold.ttf');
+}
+
+body {
+    box-sizing: border-box;
+}
+
+/* Interface geral de background cinza */
+.interface {
+    /*Dimensões, margem centralizando na tela e background-color.*/
+    width: 1280px;
+    height: 720px;
+    /*Margem centralizando.*/
+    margin: 0 auto;
+    /*Cor de fundo*/
+    background-color: #F5F5F5;
+}
+
+/*Divisão que fica a legend do form: Informações básicas*/
+.div1 {
+    margin-bottom: 40px;
+    padding: 3px 0px 3px 0px;
+}
+
+/*Divisão que fica os inputs e suas respectivas labels*/
+.div2 {
+    margin-bottom: 30px;
+    width: 352px;
+}
+
+/*Divisão que fica o botão submit*/
+.div3 {
+    width: 80px;
+    margin-top: 10px;
+}
+
+/* Classe responsável por toda a parte branca do formulário dentro da interface*/
+.formulario {
+    width: 784px;
+    height: 320px;
+    padding: 32px;
+    border-radius: 8px;
+
+    background-color: white;
+    border: 1px solid #E0E2E4;
+}
+.formulario legend {
+    font-size: 16px;
+    line-height: 20px;
+    height: 18px;
+    color: #23152B;
+    font-family: 'openbold';
+}
+.formulario label {
+    display: block;
+    font-size: 14px;
+    font-family: 'open';
+    color: #707274;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.formulario fieldset {
+    padding: 0px;
+    border: none;
+}
+.formulario input {
+    border-radius: 8px;
+    border: 1px solid #E0E2E4;
+    height: 40px;
+    padding-left: 15px;
+    width: 100%;
+    margin-bottom: 15px;
+    font-family: 'open';
+    font-size: 14px;
+}
+.formulario input:focus {
+    border: 1px solid #23152B;
+    box-shadow: none;
+    outline: 0px;
+}
+
+/*Classe responsável pela formatação do botão submit*/
+.btn-submit{
+    height: 40px;
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #E0E2E4;
+    padding: 12px, 16px, 12px, 16px;
+    color: #343536;
+
+    font-family: 'open';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 115%;
+    text-align: center;
+}
+
+.btn-submit:hover{
+    cursor: pointer;
+}
